@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="FAQ - Réponse aux questions fréquentes">
+    <title>FAQ - Réponse aux questions fréquentes</title>
+    <style>
+        /* style.css */
+
+        /* Reset minimal */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .faq article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h2 {
+            color: #007acc;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: underline;
+        }
+
+        a:focus {
+            outline: 2px solid #007acc;
+            outline-offset: 2px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .faq article {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Foire Aux Questions (FAQ)</h1>
+        <p>Réponses aux questions les plus fréquemment posées.</p>
+    </header>
+
+    <main>
+        <section class="faq">
+            <article>
+                <h2>Comment puis-je créer un compte ?</h2>
+                <p>Vous pouvez créer un compte en cliquant sur <a href="https://example.com/register">ce lien</a> et en
+                    remplissant le formulaire d’inscription.</p>
+            </article>
+
+            <article>
+                <h2>Comment réinitialiser mon mot de passe ?</h2>
+                <p>Cliquez sur <a href="https://example.com/reset">mot de passe oublié</a> et suivez les instructions.
+                </p>
+            </article>
+
+            <article>
+                <h2>Où puis-je consulter mes commandes ?</h2>
+                <p>Accédez à votre <a href="https://example.com/account/orders">espace client</a> pour consulter vos
+                    commandes.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FAQ Interactive. Tous droits réservés.</p>
+    </footer>
+
 </body>
+
 </html>
