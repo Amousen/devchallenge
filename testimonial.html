@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Page</title>
+  <style>
+    :root {
+      --shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+      --primary: #4f46e5;
+      --text: #333;
+      --light: #777;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 2rem;
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p.lead {
+      text-align: center;
+      font-size: 1.125rem;
+      color: var(--light);
+      margin-bottom: 2rem;
+    }
+
+    ul.checklist {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    ul.checklist li {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 500;
+    }
+
+    ul.checklist li::before {
+      content: '✅';
+      font-size: 1.2rem;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card .emoji {
+      font-size: 2rem;
+    }
+
+    .card blockquote {
+      font-style: italic;
+      color: var(--light);
+      margin: 0;
+    }
+
+    .card .author {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ce que disent nos utilisateurs</h1>
+    <p class="lead">Découvrez comment notre solution a transformé leur quotidien.</p>
+
+    <ul class="checklist">
+      <li>Facile à utiliser</li>
+      <li>Design responsive</li>
+      <li>Support rapide</li>
+      <li>Haute performance</li>
+    </ul>
+
+    <section class="testimonials">
+      <div class="card">
+        <div class="emoji">😊</div>
+        <blockquote>“Cette plateforme est tout simplement incroyable. J’ai gagné du temps et amélioré mon flux de travail !”</blockquote>
+        <div class="author">— Sophie D.</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🚀</div>
+        <blockquote>“Une expérience utilisateur fantastique, fluide et intuitive. Je recommande vivement.”</blockquote>
+        <div class="author">— Marc B.</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
